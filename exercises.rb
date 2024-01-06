@@ -28,3 +28,76 @@ rectangle_width = 10
 
 rectangle_area = rectange_height * rectangle_width
 puts "\nThe area of your rectangle is #{rectangle_area}.\n"
+
+=begin
+Practice Problem
+Write a Ruby script that checks if a number is positive, negative, or zero. 
+If it is a positive number, print "positive". 
+If it is a negative number, print "negative". 
+Otherwise, print "zero".
+=end
+
+num = 5
+case 
+when num > 0
+    puts "positive"
+when num < 0
+    puts "negative"
+when num == 0
+    puts "zero"
+end
+
+=begin
+Practice Problem
+Write a Ruby script that prints the numbers from 1 to 20. 
+For multiples of three, print "Fizz" instead of the number. 
+For multiples of five, print "Buzz". 
+For numbers that are multiples of both three and five, print "FizzBuzz".
+=end
+
+counter = 0
+
+while counter < 20
+    counter += 1
+    if counter % 3 == 0 && counter % 5 == 0
+        puts "FizzBuzz"
+    elsif counter % 3 == 0
+        puts "Fizz"
+    elsif counter % 5 == 0
+        puts "Buzz"
+    else
+        puts counter
+    end
+end
+
+
+#Practice Problems
+
+# Write a ruby script that converts the string "123" to an integer.
+my_string = "123"
+my_string = my_string.to_i
+
+# Write a ruby script that converts the integer 123 to a string.
+my_integar = 123
+my_integar = my_integar.to_s
+
+# Write a ruby script that converts the string "123.45" to a float.
+my_string = "123.45"
+my_string = my_string.to_f
+
+# Write a ruby script that converts the float 123.45 to a string.
+my_float = 123.45
+my_float = my_float.to_s
+
+# Write a ruby script that iterates over the array [1, 2, 3, 4, 5] and prints each element.
+my_array = [1, 2, 3, 4, 5]
+my_array.each do |element|
+    puts element
+end
+
+#Write a ruby script that iterates over the hash { "name" => "Alice", "age" => 30 } and prints each key-value pair.
+
+my_hash = { "name" => "Alice", "age" => 30 }
+for key, value in my_hash
+    puts "#{key}: #{value}"
+end
