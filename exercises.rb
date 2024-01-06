@@ -108,3 +108,36 @@ end
 def add(num1, num2)
     return num1 + num2
 end
+
+=begin
+Create a Ruby script that prints the numbers from 1 to 100. 
+For multiples of three, print "Fizz" instead of the number. 
+For multiples of five, print "Buzz". For numbers that are multiples of both three and five, print "FizzBuzz". 
+For numbers that are multiples of seven, print "Super". 
+For numbers that are multiples of both three and seven, print "FizzSuper". 
+For numbers that are multiples of both five and seven, print "BuzzSuper". 
+For numbers that are multiples of three, five, and seven, print "FizzBuzzSuper".
+=end
+
+counter = 0
+
+while counter < 100
+    counter += 1
+    if counter % 3 == 0 && counter % 5 == 0 && counter % 7 == 0
+        puts "FizzBuzzSuper"
+    elsif counter % 3 == 0 && counter % 7 == 0
+        puts "FizzSuper"
+    elsif counter % 5 == 0 && counter % 7 == 0
+        puts "BuzzSuper"
+    elsif counter % 3 == 0 && counter % 5 == 0
+        puts "FizzBuzz"
+    elsif counter % 3 == 0
+        puts "Fizz"
+    elsif counter % 5 == 0
+        puts "Buzz"
+    elsif counter % 7 == 0
+        puts "Super"
+    else
+        puts counter
+    end
+end
