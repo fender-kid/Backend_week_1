@@ -101,3 +101,10 @@ my_hash = { "name" => "Alice", "age" => 30 }
 for key, value in my_hash
     puts "#{key}: #{value}"
 end
+
+#Practice Problem
+#Write a ruby script that defines a method called add that takes two numbers as arguments and returns their sum.
+
+def add(num1, num2)
+    return num1 + num2
+end
